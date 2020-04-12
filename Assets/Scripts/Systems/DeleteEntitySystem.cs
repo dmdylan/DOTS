@@ -12,8 +12,10 @@ public class DeleteEntitySystem : JobComponentSystem
 
         Entities
             .WithAll<DeleteTag>()
+            .WithoutBurst()
             .ForEach((Entity entity) =>
             {
+                GameManager.instance.IncreaseScore();
                 commandBuffer.DestroyEntity(entity);
             }).Run();
 

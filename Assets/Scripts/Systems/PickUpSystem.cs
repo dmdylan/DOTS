@@ -12,9 +12,9 @@ public class PickUpSystem : JobComponentSystem
 
     protected override void OnCreate()
     {
-        bufferSystem.World.GetOrCreateSystem<BeginInitializationEntityCommandBufferSystem>();
         buildPhysicsWorld = World.GetOrCreateSystem<BuildPhysicsWorld>();
         stepPhysicsWorld = World.GetOrCreateSystem<StepPhysicsWorld>();
+        bufferSystem = World.GetOrCreateSystem<BeginInitializationEntityCommandBufferSystem>();
     }
 
     protected override JobHandle OnUpdate(JobHandle inputDeps)
