@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 using Unity.Jobs;
 using Unity.Collections;
-
+/*
 [AlwaysSynchronizeSystem]
 [UpdateAfter(typeof(PickUpSystem))]
 public class DeleteEntitySystem : JobComponentSystem
@@ -25,3 +25,4 @@ public class DeleteEntitySystem : JobComponentSystem
         return default;
     }
 }
+*/

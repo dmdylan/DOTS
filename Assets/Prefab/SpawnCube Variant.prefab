@@ -75,7 +75,7 @@ PrefabInstance:
     - target: {fileID: 3638584361312300263, guid: 1712f94b9c92a9b48b7b2b55f779da63,
         type: 3}
       propertyPath: m_Name
-      value: SpawnCube
+      value: SpawnCube Variant
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4201925817020654089, guid: 1712f94b9c92a9b48b7b2b55f779da63, type: 3}

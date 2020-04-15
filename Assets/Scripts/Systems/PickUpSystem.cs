@@ -3,9 +3,9 @@ using Unity.Collections;
 using Unity.Physics;
 using Unity.Physics.Systems;
 using Unity.Jobs;
-
+/*
 public class PickUpSystem : JobComponentSystem
-{
+{/*
     private BeginInitializationEntityCommandBufferSystem bufferSystem;
     private BuildPhysicsWorld buildPhysicsWorld;
     private StepPhysicsWorld stepPhysicsWorld;
@@ -50,4 +50,6 @@ public class PickUpSystem : JobComponentSystem
             }
         }
     }
+    
 }
+*/
