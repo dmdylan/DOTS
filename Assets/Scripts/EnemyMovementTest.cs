@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using Unity.Entities;
+using Unity.Mathematics;
 
 public class EnemyMovementTest : MonoBehaviour
 {
-    [SerializeField] private Transform destination;
+    [SerializeField] private Entity[] wayPoints;
 
     NavMeshAgent navMeshAgent;
 
@@ -22,11 +24,16 @@ public class EnemyMovementTest : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        
+    }
+
     private void SetDestination()
     {
-        if(destination != null)
+        if(wayPoints != null)
         {
-            Vector3 targetVector = destination.transform.position;
+            Vector3 targetVector = wayPoints[0];
             navMeshAgent.SetDestination(targetVector);
         }
     }
